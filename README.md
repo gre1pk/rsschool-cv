@@ -1,1 +1,0 @@
-https://gre1pk.github.io/rsschool-cv/cv
