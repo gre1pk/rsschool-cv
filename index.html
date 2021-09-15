@@ -59,6 +59,26 @@
           </ul>
         </div>
       </section>
+      <section class="myCode">
+        <h3 class="myCode__title">Example of my own code:</h3>
+        <pre><code class="js">function DNAStrand(dna) {
+          const mass = dna.toUpperCase().split("");
+
+          const res = mass.map((char) => {
+            switch (char) {
+              case "A":
+                return "T";
+              case "T":
+                return "A";
+              case "C":
+                return "G";
+              case "G":
+                return "C";
+            }
+          });
+          return res.reduce((acc, current) => (acc += current), "");
+        }</code></pre>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="footer__wrapper">
