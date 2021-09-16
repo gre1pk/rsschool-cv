@@ -193,20 +193,19 @@ li {
     left: 24px;
     bottom: 7px;
   }
+  .footer__yar {
+    margin-top: 10px;
+  }
   .footer__mygit {
     display: none;
   }
   .footer__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 130px;
-    /* grid-template-columns: auto 1fr auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      ". git ."
-      ". rslink . "
-      ". rsscol ."
-      ". rsscol ."; */
+    justify-content: space-around;
+    height: 50px;
+  }
+  .footer__sr-link {
+    height: 50px;
   }
 }
