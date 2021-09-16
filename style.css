@@ -161,11 +161,11 @@ li {
 
 @media (max-width: 765px) {
   .page {
-    grid-template-columns: auto, 1fr, auto;
+    grid-template-columns: 1fr;
     grid-template-areas:
-      "header header header"
-      "main main main"
-      "footer footer footer";
+      " header "
+      " main "
+      " footer ";
   }
   .sidebar {
     display: none;
@@ -181,7 +181,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 150px;
+    height: 130px;
     /* grid-template-columns: auto 1fr auto;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
