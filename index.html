@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My summary</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
   </head>
   <body class="page">
     <header class="page-header">
+      <img class="header__foto" src="./img/avatr.svg" alt="foto" width="145" />
       <h1 class="header-text">My summary</h1>
     </header>
     <aside class="sidebar">
@@ -51,13 +60,43 @@
           </ul>
         </div>
       </section>
+      <section class="myCode">
+        <h3 class="myCode__title">Example of my own code:</h3>
+        <pre><code class="js">function DNAStrand(dna) {
+          const mass = dna.toUpperCase().split("");
+
+          const res = mass.map((char) => {
+            switch (char) {
+              case "A":
+                return "T";
+              case "T":
+                return "A";
+              case "C":
+                return "G";
+              case "G":
+                return "C";
+            }
+          });
+          return res.reduce((acc, current) =>
+           (acc += current), "");
+        }</code></pre>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="footer__wrapper">
+        <div class="footer__sr-link">
+          <a href="https://rs.school"
+            ><img
+              src="./img/rs_school_js.svg"
+              alt="rss lint"
+              width="200"
+              height="50"
+          /></a>
+        </div>
         <a class="footer__rsscol" href="https://rs.school/js/"
           >Курс «JavaScript/Front-end»</a
         >
-        <span>2021 ©</span>
+        <span class="footer__yar">2021 ©</span>
         <a class="footer__mygit" href="https://github.com/gre1pk"> </a>
       </div>
     </footer>
