@@ -28,12 +28,16 @@ li {
 }
 .page-header {
   grid-area: header;
+  position: relative;
   background: rgba(207, 226, 226, 0.39);
   font-family: Helvetica;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
   line-height: 50px;
+}
+.header__foto {
+  display: none;
 }
 .sidebar {
   grid-area: sidebar;
@@ -173,6 +177,21 @@ li {
   }
   .header {
     display: block;
+  }
+  .header-text {
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  .main-nav {
+    display: block;
+  }
+  .header__foto {
+    display: block;
+    width: 50px;
+    position: absolute;
+    left: 24px;
+    bottom: 7px;
   }
   .footer__mygit {
     display: none;
